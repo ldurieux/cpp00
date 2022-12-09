@@ -7,6 +7,11 @@ bool search(PhoneBook& phonebook)
 	int			idx = 0;
 
 	phonebook.listContact();
+	if (phonebook.contactCount() == 0)
+	{
+		std::cout << "No contacts to display" << std::endl;
+		return (true);
+	}
 	while (strIdx.empty())
 	{
 		std::cout << "index: ";
